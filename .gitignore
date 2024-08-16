@@ -1,0 +1,9 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore CSS files
+css/custom.css
+css/custom.css.map
+
+# Ignore JSON files
+*.json
