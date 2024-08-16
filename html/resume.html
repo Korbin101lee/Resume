@@ -8,15 +8,24 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <style>
     .header-btn {
-        background-color: #8c65e8;
         color: #ffffff;
         border-color:black;
+        margin:5px;
+        margin-left: -10px
+        
     }
     .header-btn:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
     color: #fff;
     background-color: #004ddb;
     border-color: #285e8e; /*set the color you want here*/
     }
+    .sidebar {
+            background-color: #1b1f2a;
+            height: 100vh;
+            padding: 110px;
+            position: fixed;
+        }
+        
     body{
       width: 100vw;
       height: 100vh;
@@ -25,13 +34,23 @@
 </style>
 </head>
 <body>
-    <div class="btn-group d-flex ">
-        <a href="./aboutMe.html" class="btn header-btn btn-about btn-block" role="button">About Me</a>
-        <a href="./projects.html" class="btn header-btn btn-about btn-block" role="button">Projects</a>
-        <a href="./home.html" class="btn header-btn btn-about btn-block" role="button">Home</a>
-        <a href="./resume.html" class="btn header-btn btn-about btn-block" role="button">Resume</a>
-        <a href="./contact.html" class="btn header-btn btn-about btn-block" role="button">Contact</a>
-      </div>
+  <div class="sidebar">
+    <img src="../korbin.jpg" class="img-fluid rounded-circle mb-1 mt-0" alt="Profile Picture" width="80" height="80">
+    <p class="text-white fw-bold m-0  ">Korbin Hillan</p>
+    <p class="text-white position-relative" style="left: -15px;">Software Engineer</p>
+  
+    <a href="./home.html" class="d-flex btn header-btn btn-about btn-block" role="button">Home</a>
+    <a href="./aboutMe.html" class=" d-flex btn header-btn btn-about btn-block" role="button">About</a>
+    <a href="./projects.html" class="d-flex btn header-btn btn-about btn-block" role="button">Projects</a>
+    <a href="./resume.html" class="d-flex btn header-btn btn-about btn-block" role="button">Resume</a>
+    <a href="./contact.html" class="d-flex btn header-btn btn-about btn-block" role="button">Contact</a>
+
+    <p class="text-white fw-bold" style="margin-top: 30px; margin-left: 5px;">⭐Socials</p>
+    <a href="https://www.linkedin.com/in/korbin-hillan-b644242b3/" class=" d-flex btn header-btn btn-about btn-block" role="button">Linkedin</a>
+    <a href="https://github.com/Korbin101lee" class=" d-flex btn header-btn btn-about btn-block" role="button">Github</a>
+    <a href="https://asu.joinhandshake.com/profiles/46602067" class=" d-flex btn header-btn btn-about btn-block" role="button">Handshake</a>
+
+  </div>
 
 
 </body>
